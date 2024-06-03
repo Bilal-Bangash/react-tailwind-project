@@ -1,4 +1,4 @@
-import logo from '../../assets/react.svg'
+import logo from '../../assets/logo-trans.png'
 import fbLogo from '../../assets/facebook.png'
 import twitterLogo from '../../assets/twitter.png'
 import linkedinLogo from '../../assets/linkedin.png'
@@ -15,9 +15,8 @@ const Footer = () => {
             <img
               src={logo}
               alt="logo"
-              className="w-10 inline-block items-center"
+              className="w-[100px] inline-block items-center"
             />
-            <span className="text-white">React</span>
           </a>
           <p className="md:w-1/2">
             A simple paragraph is comprised of three major components. The first

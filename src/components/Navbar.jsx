@@ -1,6 +1,6 @@
 import { GrLanguage } from 'react-icons/gr'
 import { FaXmark, FaBars } from 'react-icons/fa6'
-import logo from '../assets/react.svg'
+import logo from '../assets/logo.png'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
 const Navbar = () => {
@@ -16,7 +16,6 @@ const Navbar = () => {
     { link: 'Pricing', path: 'pricing' },
   ]
 
-  console.log('%cisMenuOpen', 'color:red;font-size:50px', isMenuOpen)
   return (
     <>
       <nav className="bg-white md:px-14 p-4 max-w-screen-2xl mx-auto border-b text-primary fixed top-0 left-0 right-0">
@@ -29,9 +28,8 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="logo"
-                className="w-10 inline-block items-center"
+                className="w-[100px] inline-block items-center"
               />
-              <span>React</span>
             </Link>
             <ul className="md:flex space-x-12 hidden">
               {navItems.map((item) => (
