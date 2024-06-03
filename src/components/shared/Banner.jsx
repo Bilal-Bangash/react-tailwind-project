@@ -13,8 +13,8 @@ const Banner = ({ banner, heading, subHeading, btn1, btn2 }) => {
           </h2>
           <p className="text-[#EBEBEB] text-2xl mb-8">{subHeading}</p>
           <div className="space-x-5 space-y-4">
-            <button className="btn-primary">{btn1}</button>
-            <button className="btn-primary">{btn2}</button>
+            {btn1 && <button className="btn-primary">{btn1}</button>}
+            {btn2 && <button className="btn-primary">{btn2}</button>}
           </div>
         </div>
       </div>
