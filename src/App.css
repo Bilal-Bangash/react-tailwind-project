@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-  z-index: 10001;
+  z-index: 10001 !important;
 }
 
 .gradient-bg {
@@ -14,4 +14,8 @@ nav {
 
 .btn-primary {
   @apply py-3 px-8 bg-secondary text-white font-semibold rounded hover:bg-primary transition-all duration-300;
+}
+
+.active {
+  @apply border-b-2 border-secondary md:text-secondary sm:text-white;
 }

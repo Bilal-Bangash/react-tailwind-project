@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../variants'
 import GreenDot from '../assets/green-dot.png'
 import YellowDot from '../assets/yellow-dot.png'
 import RedDot from '../assets/red-dot.png'
@@ -69,7 +71,7 @@ const Pricing = () => {
     },
   ]
   return (
-    <div className="md:px-14 p-4 max-w-s mx-auto space-y-10">
+    <div className="md:px-14 p-4 max-w-s mx-auto space-y-10" id="pricing">
       <div className="text-center">
         <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5">
           Here are all our plans
@@ -104,7 +106,13 @@ const Pricing = () => {
         </div>
       </div>
       {/* packages */}
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-20 md:w-11/12 mx-auto">
+      <motion.div
+        variants={fadeIn('down', 0.2)}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.5 }}
+        className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-20 md:w-11/12 mx-auto"
+      >
         {packages.map((item, index) => (
           <div
             key={index}
@@ -132,7 +140,7 @@ const Pricing = () => {
             </ul>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }
