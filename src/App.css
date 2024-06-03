@@ -7,3 +7,11 @@ body {
 nav {
   z-index: 10001;
 }
+
+.gradient-bg {
+  background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%);
+}
+
+.btn-primary {
+  @apply py-3 px-8 bg-secondary text-white font-semibold rounded hover:bg-primary transition-all duration-300;
+}
