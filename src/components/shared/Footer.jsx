@@ -104,7 +104,9 @@ const Footer = () => {
       </div>
       <hr />
       <div className="flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8">
-        <p className="text-start text-sm py-5">© 2024 - All rights reserved</p>
+        <p className="text-start text-sm py-5">
+          Made By MBB © 2024 - All rights reserved
+        </p>
         <div className="flex space-x-4">
           <img
             src={fbLogo}
